@@ -5,6 +5,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     TOKEN = os.environ.get('TELEGRAM_TOKEN')
 
     @staticmethod
@@ -13,7 +14,7 @@ class Config:
 
 
 class DevelopmentConfig(Config):
-    from credentials import TOKEN
+    from credentials import TOKEN, SECRET_KEY
 
 
 class ProductionConfig(Config):
