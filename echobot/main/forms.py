@@ -4,5 +4,5 @@ from wtforms.validators import URL, Required
 
 
 class WebhookUrlForm(FlaskForm):
-    webhook_url = StringField('Webhook Url', validators=[URL(), Required()])
-    submit = SubmitField('Submit')
+    webhook_url = StringField("Webhook Url", validators=[URL(), Required()])
+    submit = SubmitField("Submit")

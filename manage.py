@@ -5,7 +5,7 @@ from flask_script import Manager
 from echobot import create_app
 
 
-app = create_app(os.environ.get('TELEGRAM_BOT_CONFIG') or 'default')
+app = create_app(os.environ.get("TELEGRAM_BOT_CONFIG") or "default")
 manager = Manager(app)
 
 
